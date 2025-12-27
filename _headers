@@ -1,0 +1,76 @@
+# ========================================
+# PageSpeed Optimization - Cloudflare Pages Headers
+# ========================================
+
+# Default headers for all pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# HTML files - short cache
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+# CSS files - 1 month cache
+/assets/css/*.css
+  Cache-Control: public, max-age=2592000, immutable
+  Content-Type: text/css; charset=utf-8
+
+# JavaScript files - 1 month cache
+/assets/js/*.js
+  Cache-Control: public, max-age=2592000, immutable
+  Content-Type: application/javascript; charset=utf-8
+
+# Images - 1 year cache
+/assets/images/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/assets/images/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/assets/images/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+/assets/images/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+
+/assets/images/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/svg+xml
+
+/assets/images/*.gif
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/gif
+
+# Fonts - 1 year cache
+/assets/fonts/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff2
+
+/assets/fonts/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff
+
+/assets/fonts/*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/ttf
+
+# Preload key resources
+/
+  Link: </assets/css/style-mobile.css>; rel=preload; as=style
+  Link: </assets/js/main.js>; rel=preload; as=script
+  Link: </assets/js/translations.js>; rel=preload; as=script
+  Link: </assets/images/hero-beauty.webp>; rel=preload; as=image
+
+/index.html
+  Link: </assets/css/style-mobile.css>; rel=preload; as=style
+  Link: </assets/js/main.js>; rel=preload; as=script
+  Link: </assets/js/translations.js>; rel=preload; as=script
+  Link: </assets/images/hero-beauty.webp>; rel=preload; as=image
