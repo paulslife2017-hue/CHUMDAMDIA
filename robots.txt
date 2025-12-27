@@ -1,20 +1,4 @@
-# Chungdam DEAR Skin Clinic - Robots.txt
-# https://chungdamdia.com
-
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://chungdamdia.com/sitemap.xml
-
-# Disallow admin or private directories (if any)
-# Disallow: /admin/
-# Disallow: /private/
-
-# Allow search engines to crawl CSS and JS
-Allow: /assets/css/
-Allow: /assets/js/
-Allow: /assets/images/
-
-# Crawl-delay (optional, if needed)
-# Crawl-delay: 1
