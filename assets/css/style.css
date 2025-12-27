@@ -76,9 +76,9 @@ button {
 /* Language Selector */
 .lang-selector {
     position: fixed;
-    top: 24px;
+    top: 90px;
     right: 24px;
-    z-index: 1001;
+    z-index: 999;
     display: flex;
     gap: 8px;
     background: rgba(255, 255, 255, 0.95);
@@ -95,6 +95,9 @@ button {
     border-radius: 20px;
     transition: var(--transition);
     color: var(--text-gray);
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
 
 .lang-btn:hover {
