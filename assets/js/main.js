@@ -14,9 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 언어 초기화
 function initLanguage() {
+    // URL 쿼리 파라미터 확인
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    const supportedLangs = ['ko', 'en', 'ja', 'tw'];
+    
     // 브라우저 언어 감지
     const browserLang = navigator.language.toLowerCase();
-    const supportedLangs = ['ko', 'en', 'ja', 'tw'];
     
     // 브라우저 언어 매핑
     let detectedLang = 'en'; // 기본값을 영어로 설정 (그 외 국가)
@@ -42,7 +46,14 @@ function initLanguage() {
     
     // 저장된 언어 확인 (사용자가 명시적으로 선택한 경우 우선)
     const savedLang = localStorage.getItem('chungdamdia-lang');
-    currentLang = savedLang && supportedLangs.includes(savedLang) ? savedLang : detectedLang;
+    
+    // 언어 우선순위: URL 파라미터 > 저장된 언어 > 브라우저 언어
+    if (urlLang && supportedLangs.includes(urlLang)) {
+        currentLang = urlLang;
+        localStorage.setItem('chungdamdia-lang', urlLang);
+    } else {
+        currentLang = savedLang && supportedLangs.includes(savedLang) ? savedLang : detectedLang;
+    }
     
     // 언어 적용
     setLanguage(currentLang);
