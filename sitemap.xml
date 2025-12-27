@@ -1,79 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Main Homepage with Multi-language Support -->
+  <!-- Main Homepage - Multi-language single page application -->
   <url>
     <loc>https://chungdamdia.com/</loc>
     <lastmod>2025-12-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://chungdamdia.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://chungdamdia.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://chungdamdia.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/?lang=tw" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://chungdamdia.com/" />
-    <image:image>
-      <image:loc>https://chungdamdia.com/assets/images/logo.png</image:loc>
-      <image:title>Chungdam DEAR Skin Clinic Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://chungdamdia.com/assets/images/hero-beauty.jpg</image:loc>
-      <image:title>Chungdam DEAR Skin Clinic Seoul</image:title>
-    </image:image>
-  </url>
-
-  <!-- Korean Language Page -->
-  <url>
-    <loc>https://chungdamdia.com/?lang=ko</loc>
-    <lastmod>2025-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://chungdamdia.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://chungdamdia.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://chungdamdia.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/?lang=tw" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://chungdamdia.com/" />
-  </url>
-
-  <!-- English Language Page -->
-  <url>
-    <loc>https://chungdamdia.com/?lang=en</loc>
-    <lastmod>2025-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://chungdamdia.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://chungdamdia.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://chungdamdia.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/?lang=tw" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://chungdamdia.com/" />
-  </url>
-
-  <!-- Japanese Language Page -->
-  <url>
-    <loc>https://chungdamdia.com/?lang=ja</loc>
-    <lastmod>2025-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://chungdamdia.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://chungdamdia.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://chungdamdia.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/?lang=tw" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://chungdamdia.com/" />
-  </url>
-
-  <!-- Traditional Chinese Language Page -->
-  <url>
-    <loc>https://chungdamdia.com/?lang=tw</loc>
-    <lastmod>2025-12-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://chungdamdia.com/?lang=ko" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://chungdamdia.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://chungdamdia.com/?lang=ja" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/?lang=tw" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://chungdamdia.com/" />
   </url>
 
 </urlset>
