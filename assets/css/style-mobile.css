@@ -266,14 +266,18 @@ button {
 
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 16px 36px;
+    min-height: 48px;
     border-radius: 30px;
     font-weight: 600;
     font-size: 0.95rem;
     transition: var(--transition);
     text-align: center;
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .btn-primary {
@@ -295,6 +299,7 @@ button {
 
 .btn-outline:active {
     background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.98);
 }
 
 .scroll-indicator {
@@ -947,11 +952,14 @@ button {
     justify-content: center;
     gap: 4px;
     flex: 1;
-    padding: 8px 4px;
+    padding: 12px 8px;
+    min-height: 56px;
     color: var(--text-gray);
     transition: var(--transition);
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
 }
 
 .mobile-bottom-nav .nav-item svg {
