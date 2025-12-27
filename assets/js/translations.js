@@ -1,5 +1,5 @@
 // 청담디아 다국어 번역 데이터 (한국어, 영어, 일본어, 대만 번체중국어)
-const translations = {
+window.translations = {
     ko: {
         // Site
         'site-name': '청담디아',

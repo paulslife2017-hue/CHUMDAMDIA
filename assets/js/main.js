@@ -67,11 +67,21 @@ function setLanguage(lang) {
     localStorage.setItem('chungdamdia-lang', lang);
     document.documentElement.lang = lang;
     
+    // 번역 객체 확인
+    console.log('Setting language to:', lang);
+    console.log('Translations available:', typeof translations !== 'undefined');
+    
     // 텍스트 번역
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = getTranslation(key, lang);
-        if (translation !== undefined && translation !== null) {
+        
+        // 디버깅: 첫 번째 리뷰 제목 확인
+        if (key === 'review1-title') {
+            console.log('Translating review1-title:', translation);
+        }
+        
+        if (translation !== undefined && translation !== null && translation !== '') {
             // HTML 태그가 포함된 경우 innerHTML 사용 (예: reviews-average-rating)
             if (key === 'reviews-average-rating') {
                 element.innerHTML = translation;
@@ -114,10 +124,14 @@ function setLanguage(lang) {
 
 // 번역 가져오기
 function getTranslation(key, lang = currentLang) {
-    if (translations[lang] && translations[lang][key]) {
-        return translations[lang][key];
+    if (!window.translations) {
+        console.error('Translations not loaded!');
+        return key;
     }
-    return translations['ko'][key] || key;
+    if (window.translations[lang] && window.translations[lang][key] !== undefined) {
+        return window.translations[lang][key];
+    }
+    return window.translations['ko'][key] || key;
 }
 
 // 메타 태그 업데이트
