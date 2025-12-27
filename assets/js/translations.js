@@ -93,6 +93,39 @@ const translations = {
         'doc3-cred2': '• 삼성서울병원 전공의',
         'doc3-cred3': '• 대한필러학회 회원',
         
+        // Guide (Choosing Clinic)
+        'nav-guide': '선택가이드',
+        'guide-label': 'GUIDE FOR CHOOSING',
+        'guide-title': '올바른 피부과 선택 가이드',
+        'guide-desc': '피부과를 선택할 때 꼭 확인해야 할 중요한 포인트들을 소개합니다.\n전문적이고 안전한 시술을 위한 필수 체크리스트입니다.',
+        'guide1-title': '전문의 자격증 확인',
+        'guide1-desc': '피부과 전문의 자격을 보유한 의사인지 반드시 확인하세요. 전문의는 체계적인 수련과정을 거친 의료진으로, 안전하고 효과적인 시술을 보장합니다.',
+        'guide2-title': '정품 장비 및 제품 사용',
+        'guide2-desc': 'FDA 승인을 받은 정품 레이저 장비와 필러, 보톡스를 사용하는지 확인하세요. 정품 사용은 안전성과 효과를 보장하는 가장 기본적인 요소입니다.',
+        'guide3-title': '1:1 맞춤 상담',
+        'guide3-desc': '개인의 피부 상태와 고민에 맞춘 충분한 상담 시간을 제공하는지 확인하세요. 과잉 진료 권유 없이 필요한 시술만을 제안하는 곳이 좋습니다.',
+        'guide4-title': '위생 및 안전 시스템',
+        'guide4-desc': '철저한 소독과 멸균 시스템, 1회용 소모품 사용 등 위생 관리가 잘 되어 있는지 확인하세요. 안전한 시술 환경은 필수입니다.',
+        'guide5-title': '사후 관리 시스템',
+        'guide5-desc': '시술 후 관리와 경과 확인을 위한 체계적인 사후 관리 시스템이 있는지 확인하세요. 지속적인 케어가 만족스러운 결과를 만듭니다.',
+        'guide6-title': '실제 후기 및 평판',
+        'guide6-desc': '실제 시술 받은 분들의 솔직한 후기와 평판을 확인하세요. 다만 과도하게 좋은 후기만 있는 경우는 주의가 필요합니다.',
+        'guide-cta-title': '청담디어의원은 이 모든 기준을 충족합니다',
+        'guide-cta-desc': '전문의 직접 시술, 정품 장비, 1:1 맞춤 상담으로 안전하고 만족스러운 결과를 약속드립니다.',
+        'guide-cta-btn': '상담 예약하기',
+        
+        // Why Choose Us & Treatments (SEO Section - Korean)
+        'why-label': '청담디어를 선택하는 이유',
+        'why-title': '서울에서 청담디어 피부과를 선택해야 하는 이유',
+        'why-desc': '강남 중심부에서 개인 맞춤 케어와 함께 세계적 수준의 한국 피부과를 경험하세요',
+        
+        // Reviews
+        'nav-reviews': '후기',
+        'reviews-label': 'REAL REVIEWS',
+        'reviews-title': '고객 리얼 후기',
+        'reviews-desc': '청담디어의원을 직접 경험하신 고객님들의 솔직한 후기를 확인하세요',
+        'reviews-cta-btn': '나도 후기 남기러 가기',
+        
         // Gallery
         'gallery-label': 'BEFORE & AFTER',
         'gallery-title': '시술 전후',
@@ -239,6 +272,39 @@ const translations = {
         'doc3-cred1': '• Chosun University Medical Master',
         'doc3-cred2': '• Samsung Seoul Hospital Resident',
         'doc3-cred3': '• Korean Filler Society',
+        
+        // Guide (Choosing Clinic)
+        'nav-guide': 'Guide',
+        'guide-label': 'GUIDE FOR CHOOSING',
+        'guide-title': 'Guide to Choosing the Right Skin Clinic',
+        'guide-desc': 'Important points to check when choosing a dermatology clinic.\nEssential checklist for professional and safe treatment.',
+        'guide1-title': 'Verify Specialist Certification',
+        'guide1-desc': 'Make sure the doctor has dermatology specialist qualifications. Specialists are medical professionals who have undergone systematic training, ensuring safe and effective treatment.',
+        'guide2-title': 'Authentic Equipment & Products',
+        'guide2-desc': 'Check if they use FDA-approved authentic laser equipment, fillers, and Botox. Using authentic products is the most basic factor guaranteeing safety and effectiveness.',
+        'guide3-title': '1:1 Personalized Consultation',
+        'guide3-desc': 'Check if they provide sufficient consultation time tailored to individual skin conditions and concerns. Good clinics suggest only necessary treatments without over-treatment recommendations.',
+        'guide4-title': 'Hygiene & Safety System',
+        'guide4-desc': 'Check if thorough disinfection and sterilization systems, use of disposable supplies, etc. hygiene management is well maintained. A safe treatment environment is essential.',
+        'guide5-title': 'Aftercare System',
+        'guide5-desc': 'Check if there is a systematic aftercare system for post-treatment care and progress monitoring. Continuous care creates satisfactory results.',
+        'guide6-title': 'Real Reviews & Reputation',
+        'guide6-desc': 'Check honest reviews and reputation from people who actually received treatment. However, be cautious if there are only excessively positive reviews.',
+        'guide-cta-title': 'Chungdam DEAR Meets All These Standards',
+        'guide-cta-desc': 'We promise safe and satisfactory results with specialist-performed treatments, authentic equipment, and 1:1 personalized consultation.',
+        'guide-cta-btn': 'Book Consultation',
+        
+        // Why Choose Us (SEO Section)
+        'why-label': 'WHY CHUNGDAM DEAR',
+        'why-title': 'Why Choose Chungdam DEAR Skin Clinic in Seoul?',
+        'why-desc': 'Experience world-class Korean dermatology with personalized care in the heart of Gangnam',
+        
+        // Reviews
+        'nav-reviews': 'Reviews',
+        'reviews-label': 'REAL REVIEWS',
+        'reviews-title': 'Real Customer Reviews',
+        'reviews-desc': 'See honest reviews from customers who experienced Chungdam DEAR Clinic',
+        'reviews-cta-btn': 'Leave Your Review',
         
         // Gallery
         'gallery-label': 'BEFORE & AFTER',
@@ -387,6 +453,32 @@ const translations = {
         'doc3-cred2': '• サムスンソウル病院専攻医',
         'doc3-cred3': '• 大韓フィラー学会会員',
         
+        // Guide (Choosing Clinic)
+        'nav-guide': '選択ガイド',
+        'guide-label': '選択ガイド',
+        'guide-title': '正しい皮膚科選択ガイド',
+        'guide-desc': '皮膚科を選ぶ際に必ず確認すべき重要なポイントを紹介します。\n専門的で安全な施術のための必須チェックリストです。',
+        'guide1-title': '専門医資格証の確認',
+        'guide1-desc': '皮膚科専門医資格を保有する医師であるか必ず確認してください。専門医は体系的な訓練過程を経た医療陣として、安全で効果的な施術を保証します。',
+        'guide2-title': '正規機器及び製品の使用',
+        'guide2-desc': 'FDA承認を受けた正規レーザー機器とフィラー、ボトックスを使用しているか確認してください。正規品の使用は安全性と効果を保証する最も基本的な要素です。',
+        'guide3-title': '1:1カスタマイズ相談',
+        'guide3-desc': '個人の皮膚状態とお悩みに合わせた十分な相談時間を提供するか確認してください。過剰診療勧誘なしに必要な施術のみを提案する所が良いです。',
+        'guide4-title': '衛生及び安全システム',
+        'guide4-desc': '徹底した消毒と滅菌システム、使い捨て消耗品の使用など衛生管理がよくできているか確認してください。安全な施術環境は必須です。',
+        'guide5-title': 'アフターケアシステム',
+        'guide5-desc': '施術後の管理と経過確認のための体系的なアフターケアシステムがあるか確認してください。持続的なケアが満足のいく結果を作ります。',
+        'guide6-title': '実際のレビュー及び評判',
+        'guide6-desc': '実際に施術を受けた方の率直なレビューと評判を確認してください。ただし、過度に良いレビューだけがある場合は注意が必要です。',
+        'guide-cta-title': 'チョンダムディア医院はこれらの基準をすべて満たします',
+        'guide-cta-desc': '専門医直接施術、正規機器、1:1カスタマイズ相談で安全で満足のいく結果をお約束します。',
+        'guide-cta-btn': '相談予約する',
+        
+        // Why Choose Us (SEO Section)
+        'why-label': 'なぜチョンダムディア',
+        'why-title': 'ソウルでチョンダムディア皮膚科を選ぶ理由',
+        'why-desc': '江南の中心で個別化されたケアと共に世界クラスの韓国皮膚科を体験してください',
+        
         // Gallery
         'gallery-label': 'ビフォー&アフター',
         'gallery-title': '施術前後',
@@ -533,6 +625,32 @@ const translations = {
         'doc3-cred1': '• 朝鮮大學醫學碩士',
         'doc3-cred2': '• 三星首爾醫院專科醫師',
         'doc3-cred3': '• 韓國填充劑學會會員',
+        
+        // Guide (Choosing Clinic)
+        'nav-guide': '選擇指南',
+        'guide-label': '選擇指南',
+        'guide-title': '正確選擇皮膚科指南',
+        'guide-desc': '介紹選擇皮膚科時必須確認的重要要點。\n專業且安全療程的必備檢查清單。',
+        'guide1-title': '確認專科醫師資格證',
+        'guide1-desc': '請務必確認是否為持有皮膚科專科醫師資格的醫生。專科醫師是經過系統培訓過程的醫療人員，保證安全有效的療程。',
+        'guide2-title': '使用正品設備及產品',
+        'guide2-desc': '請確認是否使用獲得FDA批准的正品雷射設備、填充劑和肉毒桿菌。使用正品是保證安全性和效果的最基本要素。',
+        'guide3-title': '1:1客製化諮詢',
+        'guide3-desc': '請確認是否提供針對個人皮膚狀況和煩惱的充分諮詢時間。建議選擇沒有過度療程推薦、只提供必要療程建議的診所。',
+        'guide4-title': '衛生及安全系統',
+        'guide4-desc': '請確認是否有完善的消毒滅菌系統、使用一次性消耗品等衛生管理。安全的療程環境是必須的。',
+        'guide5-title': '術後護理系統',
+        'guide5-desc': '請確認是否有用於療程後護理和進度確認的系統化術後護理系統。持續的護理才能創造滿意的結果。',
+        'guide6-title': '實際評價及口碑',
+        'guide6-desc': '請確認實際接受療程者的真實評價和口碑。但如果只有過度正面的評價時需要注意。',
+        'guide-cta-title': '清潭DEAR醫院滿足所有這些標準',
+        'guide-cta-desc': '專科醫師親自療程、正品設備、1:1客製化諮詢，承諾安全滿意的結果。',
+        'guide-cta-btn': '預約諮詢',
+        
+        // Why Choose Us (SEO Section)
+        'why-label': '為什麼選擇清潭DEAR',
+        'why-title': '為什麼選擇首爾清潭DEAR皮膚科？',
+        'why-desc': '在江南中心體驗世界級韓國皮膚科與個人化護理',
         
         // Gallery
         'gallery-label': '療程前後',

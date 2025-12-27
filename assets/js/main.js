@@ -19,12 +19,28 @@ function initLanguage() {
     const supportedLangs = ['ko', 'en', 'ja', 'tw'];
     
     // 브라우저 언어 매핑
-    let detectedLang = 'ko';
-    if (browserLang.startsWith('en')) detectedLang = 'en';
-    else if (browserLang.startsWith('ja')) detectedLang = 'ja';
-    else if (browserLang.startsWith('zh')) detectedLang = 'tw';
+    let detectedLang = 'en'; // 기본값을 영어로 설정 (그 외 국가)
     
-    // 저장된 언어 확인
+    // 한국어 감지
+    if (browserLang.startsWith('ko')) {
+        detectedLang = 'ko';
+    }
+    // 영어 감지
+    else if (browserLang.startsWith('en')) {
+        detectedLang = 'en';
+    }
+    // 일본어 감지
+    else if (browserLang.startsWith('ja')) {
+        detectedLang = 'ja';
+    }
+    // 중국어 감지 (대만, 홍콩, 중국 모두 번체중국어로 처리)
+    else if (browserLang.startsWith('zh')) {
+        // zh-TW (대만), zh-HK (홍콩), zh-CN (중국), zh-SG (싱가포르) 등
+        // 모두 번체중국어(tw)로 통일
+        detectedLang = 'tw';
+    }
+    
+    // 저장된 언어 확인 (사용자가 명시적으로 선택한 경우 우선)
     const savedLang = localStorage.getItem('chungdamdia-lang');
     currentLang = savedLang && supportedLangs.includes(savedLang) ? savedLang : detectedLang;
     
@@ -38,6 +54,11 @@ function initLanguage() {
             setLanguage(lang);
         });
     });
+    
+    // 디버깅: 감지된 언어 로그
+    console.log('Browser Language:', navigator.language);
+    console.log('Detected Language:', detectedLang);
+    console.log('Current Language:', currentLang);
 }
 
 // 언어 변경
