@@ -71,8 +71,13 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = getTranslation(key, lang);
-        if (translation) {
-            element.textContent = translation;
+        if (translation !== undefined && translation !== null) {
+            // HTML 태그가 포함된 경우 innerHTML 사용 (예: reviews-average-rating)
+            if (key === 'reviews-average-rating') {
+                element.innerHTML = translation;
+            } else {
+                element.textContent = translation;
+            }
         }
     });
     
