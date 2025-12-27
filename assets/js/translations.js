@@ -198,8 +198,8 @@ const translations = {
         'info-address-title': '위치',
         'info-address': '서울특별시 강남구 청담동',
         'info-address-detail': '청담역 도보 5분',
-        'info-phone-title': '전화 예약',
-        'info-phone-desc': '전화 예약 시 대기시간 단축',
+        'info-online-title': '온라인 예약',
+        'info-online-desc': '온라인 예약 시 대기시간 단축',
         'info-hours-title': '진료 시간',
         'hours-mwf': '월/수/금 10:00 - 19:00',
         'hours-tth': '화/목 10:30 - 20:00 (야간진료)',
@@ -231,7 +231,7 @@ const translations = {
         'footer-reservation': '예약',
         'footer-social': '소셜 미디어',
         'footer-copyright': '© 2024 청담디아 (CHUNGDAM DIA). All Rights Reserved.',
-        'footer-business': '사업자등록번호: 123-45-67890 | 대표: 김제민'
+        'footer-business': '서울 강남구 청담동 85-3, 남한강빌딩 5,7층'
     },
     
     en: {
@@ -465,7 +465,7 @@ const translations = {
         'footer-reservation': 'Reservation',
         'footer-social': 'Social Media',
         'footer-copyright': '© 2024 CHUNGDAM DIA. All Rights Reserved.',
-        'footer-business': 'Business No: 123-45-67890 | CEO: Kim Jemin'
+        'footer-business': 'Cheongdam-dong 85-3, Namhangang Building 5F, 7F, Gangnam-gu, Seoul'
     },
     
     ja: {
@@ -662,8 +662,8 @@ const translations = {
         'info-address-title': '位置',
         'info-address': '大韓民国ソウル特別市江南区清潭洞',
         'info-address-detail': '清潭駅徒歩5分',
-        'info-phone-title': '電話予約',
-        'info-phone-desc': '電話予約で待ち時間短縮',
+        'info-online-title': 'オンライン予約',
+        'info-online-desc': 'オンライン予約で待ち時間短縮',
         'info-hours-title': '診療時間',
         'hours-mwf': '月/水/金 10:00 - 19:00',
         'hours-tth': '火/木 10:30 - 20:00 (夜間診療)',
@@ -695,7 +695,7 @@ const translations = {
         'footer-reservation': '予約',
         'footer-social': 'ソーシャルメディア',
         'footer-copyright': '© 2024 チョンダムディア（CHUNGDAM DIA）. All Rights Reserved.',
-        'footer-business': '事業者登録番号: 123-45-67890 | 代表: キム・ジェミン'
+        'footer-business': 'ソウル特別市江南区清潭洞 85-3, 南漢江ビル 5階,7階'
     },
     
     tw: {
@@ -892,15 +892,15 @@ const translations = {
         'info-address-title': '位置',
         'info-address': '大韓民國首爾特別市江南區清潭洞',
         'info-address-detail': '清潭站步行5分鐘',
-        'info-phone-title': '電話預約',
-        'info-phone-desc': '電話預約縮短等待時間',
+        'info-online-title': '線上預約',
+        'info-online-desc': '線上預約縮短等待時間',
         'info-hours-title': '診療時間',
         'hours-mwf': '週一/三/五 10:00 - 19:00',
         'hours-tth': '週二/四 10:30 - 20:00（夜間診療）',
         'hours-sat': '週六 10:00 - 16:00',
         'hours-sun': '週日 休診',
         'form-name': '姓名',
-        'form-phone': '聯絡電話',
+        'form-contact': '聯絡方式',
         'form-email': '電子郵件（選填）',
         'form-program': '選擇感興趣的療程',
         'form-prog1': 'DIA解決方案全方位護理',
@@ -925,6 +925,6 @@ const translations = {
         'footer-reservation': '預約',
         'footer-social': '社交媒體',
         'footer-copyright': '© 2024 清潭DIA（CHUNGDAM DIA）. All Rights Reserved.',
-        'footer-business': '營業執照號: 123-45-67890 | 代表: 金濟民'
+        'footer-business': '首爾江南區清潭洞 85-3, 南漢江大樓 5樓,7樓'
     }
 };
