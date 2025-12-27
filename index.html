@@ -3,183 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIA 솔루션 토탈케어 - 피부 본연의 건강 회복</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Meta Tags -->
+    <title>청담디아 | 프리미엄 피부 클리닉 | 청담동 피부관리 전문</title>
+    <meta name="description" content="청담동 프리미엄 피부 클리닉 청담디아. 정밀 피부 진단, 맞춤형 레이저 시술, 필러, 보톡스, 리프팅 전문. 개인별 맞춤 디자인 솔루션으로 자연스러운 아름다움을 선사합니다.">
+    <meta name="keywords" content="청담디아, 청담동 피부과, 강남 피부클리닉, 레이저 시술, 필러, 보톡스, 리프팅, 피부관리, 안티에이징, 청담 뷰티클리닉">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="청담디아 | 프리미엄 피부 클리닉">
+    <meta property="og:description" content="청담동 프리미엄 피부 클리닉. 정밀 진단과 맞춤형 솔루션으로 자연스러운 아름다움을 만듭니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chungdamdia.com">
+    <meta property="og:image" content="https://chungdamdia.com/assets/images/og-image.jpg">
+    
+    <!-- Canonical & Alternate -->
+    <link rel="canonical" href="https://chungdamdia.com">
+    <link rel="alternate" hreflang="ko" href="https://chungdamdia.com">
+    <link rel="alternate" hreflang="en" href="https://chungdamdia.com/en">
+    <link rel="alternate" hreflang="ja" href="https://chungdamdia.com/ja">
+    <link rel="alternate" hreflang="zh-TW" href="https://chungdamdia.com/tw">
+    <link rel="alternate" hreflang="x-default" href="https://chungdamdia.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "청담디아",
+      "alternateName": ["Chungdam DIA", "チョンダムディア", "清潭DIA"],
+      "description": "프리미엄 피부 클리닉 및 미용 시술 전문",
+      "url": "https://chungdamdia.com",
+      "telephone": "+82-2-1234-5678",
+      "priceRange": "₩₩₩",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "청담동",
+        "addressLocality": "강남구",
+        "addressRegion": "서울",
+        "postalCode": "06000",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.5219,
+        "longitude": 127.0411
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday", "Friday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Thursday"],
+          "opens": "10:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/chungdamdia",
+        "https://www.facebook.com/chungdamdia",
+        "https://blog.naver.com/chungdamdia"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">DIA Solution</div>
-            <ul class="nav-menu">
-                <li><a href="#home">홈</a></li>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#features">특징</a></li>
-                <li><a href="#benefits">효과</a></li>
-                <li><a href="#contact">문의</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Language Selector (Fixed) -->
+    <div class="lang-selector">
+        <button class="lang-btn active" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="tw">繁中</button>
+    </div>
+
+    <!-- Header (Sticky) -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="청담디아 로고" class="logo-img">
+                <div class="logo-text">
+                    <h1 data-i18n="site-name">청담디아</h1>
+                    <span class="logo-en">CHUNGDAM DIA</span>
+                </div>
             </div>
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="nav-home">홈</a></li>
+                    <li><a href="#philosophy" data-i18n="nav-philosophy">철학</a></li>
+                    <li><a href="#programs" data-i18n="nav-programs">프로그램</a></li>
+                    <li><a href="#system" data-i18n="nav-system">시스템</a></li>
+                    <li><a href="#doctors" data-i18n="nav-doctors">의료진</a></li>
+                    <li><a href="#gallery" data-i18n="nav-gallery">갤러리</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">예약</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="메뉴">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title">DIA 솔루션 토탈케어</h1>
-            <p class="hero-subtitle">피부 본연의 건강을 회복시키는 복합 레이저 토탈 솔루션</p>
-            <p class="hero-description">피부 톤, 탄력, 모공을 동시에 개선합니다</p>
-            <button class="cta-button">상담 예약하기</button>
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="/assets/images/hero-bg.jpg" alt="청담디아 클리닉" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade-up" data-i18n="hero-subtitle">당신의 피부가 원하는 방식으로</p>
+            <h2 class="hero-title animate-fade-up delay-1" data-i18n="hero-title">자연스럽게, 그러나 분명하게</h2>
+            <p class="hero-desc animate-fade-up delay-2" data-i18n="hero-desc">청담디아만의 프리미엄 피부 솔루션</p>
+            <div class="hero-btns animate-fade-up delay-3">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero-cta1">상담 예약</a>
+                <a href="#programs" class="btn btn-outline" data-i18n="hero-cta2">프로그램 보기</a>
+            </div>
         </div>
         <div class="scroll-indicator">
             <span></span>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Philosophy Section -->
+    <section class="section philosophy" id="philosophy">
         <div class="container">
             <div class="section-header">
-                <h2>DIA 솔루션이란?</h2>
-                <div class="section-divider"></div>
+                <span class="section-label" data-i18n="philosophy-label">DIA PHILOSOPHY</span>
+                <h2 class="section-title" data-i18n="philosophy-title">디아 디자인 철학</h2>
+                <p class="section-desc" data-i18n="philosophy-desc">
+                    청담디아는 피부를 단순히 치료하는 것이 아닌,<br>
+                    개인의 피부 구조와 목적에 맞춘 정밀한 디자인 솔루션을 제공합니다.
+                </p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>DIA 솔루션 토탈케어는 최첨단 복합 레이저 기술을 활용하여 피부 본연의 건강을 회복시키는 혁신적인 피부 관리 시스템입니다.</p>
-                    <p>단순한 표면적 개선이 아닌, 피부 깊숙이 작용하여 근본적인 피부 건강을 되찾아드립니다.</p>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-card card-reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="phil1-title">정밀 진단</h3>
+                    <p data-i18n="phil1-desc">최첨단 피부 분석 시스템으로 육안으로 보이지 않는 피부 문제까지 정확하게 진단합니다.</p>
+                </div>
+                
+                <div class="philosophy-card card-reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="phil2-title">맞춤 디자인</h3>
+                    <p data-i18n="phil2-desc">같은 문제라도 개인마다 다른 피부 타입에 맞춘 차별화된 솔루션을 제안합니다.</p>
+                </div>
+                
+                <div class="philosophy-card card-reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="phil3-title">세심한 케어</h3>
+                    <p data-i18n="phil3-desc">숙련된 의료진의 섬세한 시술과 체계적인 사후 관리로 만족스러운 결과를 제공합니다.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Programs Section -->
+    <section class="section programs" id="programs">
         <div class="container">
             <div class="section-header">
-                <h2>핵심 특징</h2>
-                <div class="section-divider"></div>
+                <span class="section-label" data-i18n="programs-label">SIGNATURE PROGRAMS</span>
+                <h2 class="section-title" data-i18n="programs-title">청담디아 시그니처 프로그램</h2>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 16v-4"></path>
-                            <path d="M12 8h.01"></path>
-                        </svg>
+            
+            <div class="programs-wrapper">
+                <div class="program-card card-hover">
+                    <div class="program-image">
+                        <img src="/assets/images/program-1.jpg" alt="DIA 솔루션 토탈케어">
+                        <div class="program-badge" data-i18n="badge-signature">SIGNATURE</div>
                     </div>
-                    <h3>복합 레이저 시술</h3>
-                    <p>다양한 레이저 기술을 복합적으로 활용하여 피부 문제를 종합적으로 해결합니다.</p>
+                    <div class="program-content">
+                        <h3 data-i18n="prog1-title">DIA 솔루션 토탈케어</h3>
+                        <p data-i18n="prog1-desc">피부 본연의 건강을 회복시키는 복합 레이저 토탈 솔루션으로 피부 톤, 탄력, 모공을 동시에 개선합니다.</p>
+                        <ul class="program-features">
+                            <li data-i18n="prog1-feat1">• 복합 레이저 시술</li>
+                            <li data-i18n="prog1-feat2">• 피부 재생 촉진</li>
+                            <li data-i18n="prog1-feat3">• 즉각적인 효과</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 3v18h18"></path>
-                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
-                        </svg>
+
+                <div class="program-card card-hover">
+                    <div class="program-image">
+                        <img src="/assets/images/program-2.jpg" alt="풀페이스 필러 디자인">
+                        <div class="program-badge badge-premium" data-i18n="badge-premium">PREMIUM</div>
                     </div>
-                    <h3>피부 재생 촉진</h3>
-                    <p>콜라겐 생성을 자극하여 피부 재생 과정을 촉진하고 자연스러운 회복을 돕습니다.</p>
+                    <div class="program-content">
+                        <h3 data-i18n="prog2-title">풀페이스 필러 디자인</h3>
+                        <p data-i18n="prog2-desc">개인의 얼굴 비율과 구조를 분석하여 자연스럽고 조화로운 볼륨감을 디자인하는 맞춤형 필러 시술입니다.</p>
+                        <ul class="program-features">
+                            <li data-i18n="prog2-feat1">• 황금비율 분석</li>
+                            <li data-i18n="prog2-feat2">• 자연스러운 볼륨</li>
+                            <li data-i18n="prog2-feat3">• 안전한 정품 필러</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
+
+                <div class="program-card card-hover">
+                    <div class="program-image">
+                        <img src="/assets/images/program-3.jpg" alt="바디 컨투어링">
+                        <div class="program-badge badge-special" data-i18n="badge-special">SPECIAL</div>
                     </div>
-                    <h3>즉각적인 효과</h3>
-                    <p>시술 직후부터 눈에 띄는 피부 개선 효과를 경험할 수 있습니다.</p>
+                    <div class="program-content">
+                        <h3 data-i18n="prog3-title">바디 컨투어링</h3>
+                        <p data-i18n="prog3-desc">얼굴뿐만 아니라 바디 라인까지 아름답게 디자인하는 체형 관리 프로그램으로 전신의 균형미를 완성합니다.</p>
+                        <ul class="program-features">
+                            <li data-i18n="prog3-feat1">• 비만 관리 솔루션</li>
+                            <li data-i18n="prog3-feat2">• 체형 밸런싱</li>
+                            <li data-i18n="prog3-feat3">• 피부 탄력 강화</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
+    <!-- System Section -->
+    <section class="section system" id="system">
         <div class="container">
             <div class="section-header">
-                <h2>개선 효과</h2>
-                <div class="section-divider"></div>
+                <span class="section-label" data-i18n="system-label">DIA SYSTEM</span>
+                <h2 class="section-title" data-i18n="system-title">1:1 정밀 진단 프로세스</h2>
+                <p class="section-desc" data-i18n="system-desc">작은 것도 놓치지 않는, 오직 당신만을 위한 맞춤 진단</p>
             </div>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>피부 톤 개선</h3>
-                    <p>불규칙한 피부 톤을 균일하게 조정하고 밝고 맑은 피부로 개선합니다.</p>
+
+            <div class="system-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys1-title">현재 상태 파악</h3>
+                        <p data-i18n="sys1-desc">고민과 목표를 상담하고 객관적인 피부 상태를 진단합니다.</p>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>탄력 회복</h3>
-                    <p>처진 피부에 탄력을 되찾아주고 젊고 생기있는 피부로 만들어줍니다.</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys2-title">미적 분석</h3>
+                        <p data-i18n="sys2-desc">의학적 진단에 더해 얼굴 비율과 이미지를 고려한 미적 분석을 진행합니다.</p>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>모공 축소</h3>
-                    <p>확대된 모공을 효과적으로 축소하여 매끄럽고 정돈된 피부 결을 만듭니다.</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys3-title">시술 결정</h3>
+                        <p data-i18n="sys3-desc">과잉 시술 없이 필요한 시술만을 선택하여 최적의 플랜을 수립합니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys4-title">맞춤 솔루션</h3>
+                        <p data-i18n="sys4-desc">통증을 최소화하고 효과를 극대화하는 개인 맞춤형 시술을 진행합니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys5-title">디자인 시술</h3>
+                        <p data-i18n="sys5-desc">자연스러운 아름다움을 위한 정밀한 시술 디자인을 실행합니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">06</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys6-title">원장 직접 시술</h3>
+                        <p data-i18n="sys6-desc">숙련된 노하우로 원장이 직접 모든 시술을 집도합니다.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">07</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="sys7-title">사후 관리</h3>
+                        <p data-i18n="sys7-desc">시술 후 해피콜과 상태 체크를 통한 체계적인 사후 관리를 제공합니다.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process">
+    <!-- Doctors Section -->
+    <section class="section doctors" id="doctors">
         <div class="container">
             <div class="section-header">
-                <h2>시술 과정</h2>
-                <div class="section-divider"></div>
+                <span class="section-label" data-i18n="doctors-label">MEDICAL TEAM</span>
+                <h2 class="section-title" data-i18n="doctors-title">청담디아 전문 의료진</h2>
+                <p class="section-desc" data-i18n="doctors-desc">
+                    풍부한 임상 경험과 뛰어난 미적 감각을 갖춘<br>
+                    청담디아의 전문 의료진을 소개합니다.
+                </p>
             </div>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>상담 및 진단</h3>
-                    <p>전문의와 상담을 통해 피부 상태를 정밀하게 진단합니다.</p>
+
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="/assets/images/doctor-1.jpg" alt="김 원장">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-position" data-i18n="doc-position">대표원장</span>
+                        <h3 class="doctor-name" data-i18n="doc1-name">김 원장</h3>
+                        <p class="doctor-desc" data-i18n="doc1-desc">차별화된 아름다움을 선사하는 의료 전문가</p>
+                        <ul class="doctor-credentials">
+                            <li data-i18n="doc1-cred1">• 서울대학교 의과대학 졸업</li>
+                            <li data-i18n="doc1-cred2">• 대한비만미용체형학회 정회원</li>
+                            <li data-i18n="doc1-cred3">• 대한레이저피부모발학회 정회원</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>맞춤 설계</h3>
-                    <p>개인별 피부 상태에 최적화된 시술 계획을 수립합니다.</p>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="/assets/images/doctor-2.jpg" alt="이 원장">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-position" data-i18n="doc-position">대표원장</span>
+                        <h3 class="doctor-name" data-i18n="doc2-name">이 원장</h3>
+                        <p class="doctor-desc" data-i18n="doc2-desc">고객을 최우선으로 생각하는 의료진</p>
+                        <ul class="doctor-credentials">
+                            <li data-i18n="doc2-cred1">• 연세대학교 의과대학 졸업</li>
+                            <li data-i18n="doc2-cred2">• 대한미용성형레이저의학회 정회원</li>
+                            <li data-i18n="doc2-cred3">• 15년 이상 임상 경험</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>복합 레이저 시술</h3>
-                    <p>최첨단 레이저 장비로 안전하고 효과적인 시술을 진행합니다.</p>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="/assets/images/doctor-3.jpg" alt="박 원장">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="doctor-position" data-i18n="doc-position">대표원장</span>
+                        <h3 class="doctor-name" data-i18n="doc3-name">박 원장</h3>
+                        <p class="doctor-desc" data-i18n="doc3-desc">공감하고 함께 고민하는 전문의</p>
+                        <ul class="doctor-credentials">
+                            <li data-i18n="doc3-cred1">• 조선대학교 의학석사</li>
+                            <li data-i18n="doc3-cred2">• 대한필러학회 정회원</li>
+                            <li data-i18n="doc3-cred3">• 대한줄기세포학회 정회원</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>애프터케어</h3>
-                    <p>시술 후 관리를 통해 최상의 효과를 유지합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="gallery-label">BEFORE & AFTER</span>
+                <h2 class="section-title" data-i18n="gallery-title">시술 전후</h2>
+                <p class="section-desc" data-i18n="gallery-desc">청담디아에서 변화를 경험하신 고객님들의 실제 사례입니다.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-1.jpg" alt="시술 전후 1">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal1-title">풀페이스 필러</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-2.jpg" alt="시술 전후 2">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal2-title">레이저 토닝</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-3.jpg" alt="시술 전후 3">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal3-title">슈링크 리프팅</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-1.jpg" alt="시술 전후 4">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal4-title">피코레이저</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-2.jpg" alt="시술 전후 5">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal5-title">보톡스</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="/assets/images/gallery-3.jpg" alt="시술 전후 6">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4 data-i18n="gal6-title">바디 컨투어링</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <h2>상담 문의</h2>
-                <div class="section-divider"></div>
-                <p>DIA 솔루션 토탈케어에 대해 궁금하신 점이 있으시면 언제든지 문의해주세요.</p>
+                <span class="section-label" data-i18n="contact-label">RESERVATION</span>
+                <h2 class="section-title" data-i18n="contact-title">상담 예약</h2>
+                <p class="section-desc" data-i18n="contact-desc">청담디아에서 당신만의 아름다움을 찾아보세요</p>
             </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="이름" required>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-section">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3 data-i18n="info-address-title">위치</h3>
+                        <p data-i18n="info-address">서울특별시 강남구 청담동</p>
+                        <p data-i18n="info-address-detail">청담역 도보 5분</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3 data-i18n="info-phone-title">전화 예약</h3>
+                        <p class="info-phone"><a href="tel:+82212345678">02-1234-5678</a></p>
+                        <p data-i18n="info-phone-desc">전화 예약 시 대기시간 단축</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3 data-i18n="info-hours-title">진료 시간</h3>
+                        <ul class="hours-list">
+                            <li data-i18n="hours-mwf">월/수/금 10:00 - 19:00</li>
+                            <li data-i18n="hours-tth">화/목 10:30 - 20:00 (야간진료)</li>
+                            <li data-i18n="hours-sat">토 10:00 - 16:00</li>
+                            <li data-i18n="hours-sun">일 휴진</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="연락처" required>
+
+                <div class="contact-form-section">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="이름" data-i18n-placeholder="form-name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="연락처" data-i18n-placeholder="form-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="이메일 (선택)" data-i18n-placeholder="form-email">
+                        </div>
+                        <div class="form-group">
+                            <select name="program" required>
+                                <option value="" data-i18n="form-program">관심 프로그램 선택</option>
+                                <option value="solution" data-i18n="form-prog1">DIA 솔루션 토탈케어</option>
+                                <option value="filler" data-i18n="form-prog2">풀페이스 필러 디자인</option>
+                                <option value="body" data-i18n="form-prog3">바디 컨투어링</option>
+                                <option value="laser" data-i18n="form-prog4">레이저 토닝</option>
+                                <option value="lifting" data-i18n="form-prog5">리프팅</option>
+                                <option value="botox" data-i18n="form-prog6">보톡스/필러</option>
+                                <option value="other" data-i18n="form-prog7">기타 상담</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="문의 내용 (선택)" data-i18n-placeholder="form-message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="form-submit">예약 신청하기</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="이메일" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="문의 내용" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">문의하기</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -187,30 +518,49 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>DIA Solution</h3>
-                    <p>피부 본연의 건강을 회복시키는<br>복합 레이저 토탈 솔루션</p>
+                <div class="footer-brand">
+                    <h3>청담디아</h3>
+                    <p class="footer-en">CHUNGDAM DIA CLINIC</p>
+                    <p class="footer-slogan" data-i18n="footer-slogan">자연스럽게, 그러나 분명하게</p>
                 </div>
-                <div class="footer-section">
-                    <h4>빠른 링크</h4>
-                    <ul>
-                        <li><a href="#home">홈</a></li>
-                        <li><a href="#about">소개</a></li>
-                        <li><a href="#features">특징</a></li>
-                        <li><a href="#benefits">효과</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>문의</h4>
-                    <p>이메일: info@diasolution.com<br>전화: 02-1234-5678</p>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer-programs">프로그램</h4>
+                        <ul>
+                            <li><a href="#programs" data-i18n="footer-prog1">DIA 솔루션</a></li>
+                            <li><a href="#programs" data-i18n="footer-prog2">필러 디자인</a></li>
+                            <li><a href="#programs" data-i18n="footer-prog3">바디 컨투어링</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer-info">안내</h4>
+                        <ul>
+                            <li><a href="#doctors" data-i18n="footer-doctors">의료진</a></li>
+                            <li><a href="#gallery" data-i18n="footer-gallery">갤러리</a></li>
+                            <li><a href="#contact" data-i18n="footer-reservation">예약</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer-social">소셜 미디어</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/chungdamdia" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/chungdamdia" target="_blank">Facebook</a></li>
+                            <li><a href="https://blog.naver.com/chungdamdia" target="_blank">Naver Blog</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 DIA Solution. All rights reserved.</p>
+                <p data-i18n="footer-copyright">&copy; 2024 청담디아 (CHUNGDAM DIA). All Rights Reserved.</p>
+                <p data-i18n="footer-business">사업자등록번호: 123-45-67890 | 대표: 김제민</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="/assets/js/translations.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

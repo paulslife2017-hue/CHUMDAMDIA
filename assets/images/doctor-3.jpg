@@ -1,0 +1,11 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="docgrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#docgrad3)"/>
+  <circle cx="300" cy="300" r="80" fill="#a67c52"/>
+  <text x="300" y="500" font-family="Arial" font-size="32" fill="#666" text-anchor="middle">의료진 3</text>
+</svg>
