@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Test</title>
+</head>
+<body>
+    <h1>Translation Test Page</h1>
+    
+    <div>
+        <button onclick="setLanguage('ko')">한국어</button>
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('ja')">日本語</button>
+        <button onclick="setLanguage('tw')">繁體中文</button>
+    </div>
+    
+    <hr>
+    
+    <h2>Review Section Test</h2>
+    <div>
+        <h3 data-i18n="reviews-title"></h3>
+        <p data-i18n="reviews-desc"></p>
+        <h4 data-i18n="review1-title"></h4>
+        <p data-i18n="review1-content"></p>
+        <span data-i18n="review1-tag1"></span>
+        <span data-i18n="review1-tag2"></span>
+    </div>
+    
+    <hr>
+    
+    <h2>Treatment Guide Test</h2>
+    <div>
+        <h3 data-i18n="treatment-guide-title"></h3>
+        <p data-i18n="treatment-guide-desc"></p>
+        <h4 data-i18n="ultherapy-guide-title"></h4>
+        <p data-i18n="ultherapy-what-desc"></p>
+    </div>
+    
+    <hr>
+    <h2>Debug Info</h2>
+    <pre id="debug"></pre>
+    
+    <script src="./assets/js/translations.js"></script>
+    <script>
+        let currentLang = 'ko';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            const debugEl = document.getElementById('debug');
+            let debugInfo = `Setting language to: ${lang}\n`;
+            debugInfo += `window.translations exists: ${typeof window.translations !== 'undefined'}\n`;
+            
+            if (window.translations) {
+                debugInfo += `Language '${lang}' exists: ${!!window.translations[lang]}\n`;
+                debugInfo += `review1-title in ${lang}: ${window.translations[lang]['review1-title']}\n`;
+            }
+            
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = getTranslation(key, lang);
+                
+                debugInfo += `Key: ${key} = ${translation}\n`;
+                
+                if (translation !== undefined && translation !== null && translation !== '') {
+                    element.textContent = translation;
+                } else {
+                    element.textContent = '[NO TRANSLATION]';
+                }
+            });
+            
+            debugEl.textContent = debugInfo;
+        }
+        
+        function getTranslation(key, lang = currentLang) {
+            if (!window.translations) {
+                return 'ERROR: translations not loaded';
+            }
+            if (window.translations[lang] && window.translations[lang][key] !== undefined) {
+                return window.translations[lang][key];
+            }
+            return window.translations['ko'][key] || key;
+        }
+        
+        // 페이지 로드 시 한국어로 설정
+        window.addEventListener('DOMContentLoaded', function() {
+            setLanguage('ko');
+        });
+    </script>
+</body>
+</html>
