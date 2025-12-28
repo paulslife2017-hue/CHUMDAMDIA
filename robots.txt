@@ -1,4 +1,18 @@
+# Robots.txt for Chungdam Skin Clinic
+# Updated: 2025-12-27
+
+# Allow all search engines to crawl everything
 User-agent: *
 Allow: /
 
+# Disallow access to admin/backend (if any in future)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
 Sitemap: https://www.chungdamskinclinic.com/sitemap.xml
+
+# Additional sitemaps (for future expansion)
+# Sitemap: https://www.chungdamskinclinic.com/sitemap-blog.xml
+# Sitemap: https://www.chungdamskinclinic.com/sitemap-treatments.xml

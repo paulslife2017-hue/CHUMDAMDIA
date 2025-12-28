@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Owner/Director: Chungdam Skin Clinic
+    Site: https://www.chungdamskinclinic.com
+    Location: Cheongdam-dong, Gangnam-gu, Seoul, South Korea
+
+# THANKS
+
+    GenSpark AI Developer - Website Development & SEO Optimization
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3, JavaScript ES6+
+    Components: Vanilla JavaScript (No frameworks)
+    Optimization: WebP images, Lazy loading, Critical CSS
+    SEO: Schema.org structured data, Meta tags optimization
+    Mobile: Responsive design, Mobile-first approach
+    Performance: Fast loading, Optimized assets
+    Analytics: Google Analytics (if integrated)
+    
+# SITE
+
+    Last update: 2025/12/27
+    Language: English / Korean (한국어)
+    Doctype: HTML5
+    IDE: Modern Web Standards
