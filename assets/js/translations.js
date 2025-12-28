@@ -173,6 +173,9 @@ window.translations = {
         'treatment4-advantage': '장점',
         'treatment4-advantage-desc': '정밀한 주입 기술, 최소한의 멍, 자연스러운 결과',
         
+        // Navigation - Location
+        'nav-location': '오시는길',
+        
         // Reviews
         'nav-reviews': '후기',
         'reviews-label': 'REAL REVIEWS',
@@ -339,7 +342,23 @@ window.translations = {
         'footer-reservation': '예약',
         'footer-social': '소셜 미디어',
         'footer-copyright': '© 2024 청담디아 (CHUNGDAM DIA). All Rights Reserved.',
-        'footer-business': '서울 강남구 청담동 85-3, 남한강빌딩 5,7층'
+        'footer-business': '서울 강남구 청담동 85-3, 남한강빌딩 5,7층',
+        
+        // Location
+        'location-label': 'LOCATION',
+        'location-title': '오시는 길',
+        'location-desc': '강남 청담동 중심부에 위치한 청담디어의원으로 오시는 길을 안내해드립니다.',
+        'location-address-title': '주소',
+        'location-address': '서울 강남구 청담동 85-3, 남한강빌딩 5,7층',
+        'location-subway-title': '지하철',
+        'location-subway': '7호선 청담역 8번 출구 도보 5분',
+        'location-parking-title': '주차',
+        'location-parking': '건물 내 주차 가능 (방문 시 주차권 제공)',
+        'location-hours-title': '진료시간',
+        'location-hours': '월/수/금: 10:00 - 19:00<br>화/목: 10:30 - 20:00<br>토: 10:00 - 16:00<br>일요일/공휴일 휴진',
+        'location-call': '전화 상담',
+        'location-naver': '네이버 지도',
+        'location-kakao': '카카오맵'
     },
     
     en: {
@@ -681,7 +700,26 @@ window.translations = {
         'footer-reservation': 'Reservation',
         'footer-social': 'Social Media',
         'footer-copyright': '© 2024 CHUNGDAM DIA. All Rights Reserved.',
-        'footer-business': 'Cheongdam-dong 85-3, Namhangang Building 5F, 7F, Gangnam-gu, Seoul'
+        'footer-business': 'Cheongdam-dong 85-3, Namhangang Building 5F, 7F, Gangnam-gu, Seoul',
+        
+        // Navigation - Location
+        'nav-location': 'Location',
+        
+        // Location
+        'location-label': 'LOCATION',
+        'location-title': 'How to Get Here',
+        'location-desc': 'Guide to Chungdam DEAR Clinic located in the heart of Cheongdam-dong, Gangnam.',
+        'location-address-title': 'Address',
+        'location-address': '85-3 Cheongdam-dong, Gangnam-gu, Seoul, Namhangang Building 5F & 7F',
+        'location-subway-title': 'Subway',
+        'location-subway': '5 min walk from Cheongdam Station Exit 8 (Line 7)',
+        'location-parking-title': 'Parking',
+        'location-parking': 'Parking available (Free parking ticket provided)',
+        'location-hours-title': 'Hours',
+        'location-hours': 'Mon/Wed/Fri: 10:00 - 19:00<br>Tue/Thu: 10:30 - 20:00<br>Sat: 10:00 - 16:00<br>Closed on Sundays & Holidays',
+        'location-call': 'Call Us',
+        'location-naver': 'Naver Map',
+        'location-kakao': 'Kakao Map'
     },
     
     ja: {

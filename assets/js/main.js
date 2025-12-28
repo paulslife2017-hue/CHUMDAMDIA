@@ -5,6 +5,7 @@ let currentLang = 'ko';
 // DOM 로드 완료
 document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
+    initLanguageDropdown();
     initHeader();
     initMobileMenu();
     initSmoothScroll();
@@ -57,39 +58,55 @@ function initLanguage() {
     
     // 언어 적용
     setLanguage(currentLang);
+}
+
+// 언어 드롭다운 초기화 (별도 함수)
+function initLanguageDropdown() {
+    console.log('🌐 Initializing language dropdown...');
     
-    // 언어 드롭다운 토글
     const langToggle = document.getElementById('langToggle');
     const langSelector = document.querySelector('.lang-selector');
-    const langDropdown = document.getElementById('langDropdown');
     
-    if (langToggle) {
-        langToggle.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langSelector.classList.toggle('active');
-        });
+    console.log('langToggle:', langToggle);
+    console.log('langSelector:', langSelector);
+    
+    if (!langToggle || !langSelector) {
+        console.error('❌ Language selector elements not found!');
+        return;
     }
     
-    // 언어 옵션 클릭 이벤트
-    document.querySelectorAll('.lang-option').forEach(option => {
-        option.addEventListener('click', function() {
+    // 토글 버튼 클릭
+    langToggle.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('✅ Toggle clicked!');
+        langSelector.classList.toggle('active');
+        console.log('Active:', langSelector.classList.contains('active'));
+    };
+    
+    // 언어 옵션 클릭
+    const langOptions = document.querySelectorAll('.lang-option');
+    console.log('Found', langOptions.length, 'language options');
+    
+    langOptions.forEach(option => {
+        option.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const lang = this.getAttribute('data-lang');
+            console.log('✅ Language selected:', lang);
             setLanguage(lang);
             langSelector.classList.remove('active');
-        });
+        };
     });
     
-    // 드롭다운 외부 클릭 시 닫기
+    // 외부 클릭 시 닫기
     document.addEventListener('click', function(e) {
-        if (langSelector && !langSelector.contains(e.target)) {
+        if (!langSelector.contains(e.target)) {
             langSelector.classList.remove('active');
         }
     });
     
-    // 디버깅: 감지된 언어 로그
-    console.log('Browser Language:', navigator.language);
-    console.log('Detected Language:', detectedLang);
-    console.log('Current Language:', currentLang);
+    console.log('✅ Language dropdown initialized successfully!');
 }
 
 // 언어 변경

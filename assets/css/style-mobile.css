@@ -85,15 +85,16 @@ button {
 .lang-toggle {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
+    border-radius: 50%;
     color: rgba(255, 255, 255, 0.95);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -101,33 +102,24 @@ button {
 .header.scrolled .lang-toggle {
     background: rgba(102, 126, 234, 0.08);
     border-color: rgba(102, 126, 234, 0.2);
-    color: var(--text-dark);
 }
 
 .lang-toggle:hover {
     background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-1px);
+    transform: scale(1.1);
 }
 
 .header.scrolled .lang-toggle:hover {
     background: rgba(102, 126, 234, 0.15);
 }
 
-.lang-icon {
-    font-size: 1rem;
+.lang-selector.active .lang-toggle {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
 
-.lang-current {
-    font-size: 0.8rem;
-}
-
-.lang-arrow {
-    font-size: 0.6rem;
-    transition: transform 0.3s ease;
-}
-
-.lang-selector.active .lang-arrow {
-    transform: rotate(180deg);
+.header.scrolled .lang-selector.active .lang-toggle {
+    background: rgba(102, 126, 234, 0.2);
 }
 
 /* Language Dropdown */
