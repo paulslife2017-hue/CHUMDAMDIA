@@ -1,0 +1,14 @@
+# Vercel ignore file
+.git
+.gitignore
+*.md
+!README.md
+*.sh
+node_modules
+.DS_Store
+.env
+.env.local
+optimize-images.sh
+check_translation.js
+add-webp-support.js
+test-translation.html
