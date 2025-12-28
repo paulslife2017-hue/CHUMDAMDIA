@@ -1,4 +1,4 @@
-// 청담디아 메인 JavaScript - 향상된 기능
+// 청담디어 메인 JavaScript - 향상된 기능
 
 let currentLang = 'ko';
 
@@ -157,14 +157,14 @@ function getTranslation(key, lang = currentLang) {
 // 메타 태그 업데이트
 function updateMetaTags(lang) {
     const titleMap = {
-        ko: '청담디아 | 프리미엄 피부 클리닉 | 청담동 피부관리 전문',
+        ko: '청담디어 | 프리미엄 피부 클리닉 | 청담동 피부관리 전문',
         en: 'Chungdam DIA | Premium Skin Clinic | Seoul Gangnam',
         ja: 'チョンダムディア | プレミアムスキンクリニック | ソウル江南',
         tw: '清潭DIA | 頂級皮膚診所 | 首爾江南'
     };
     
     const descMap = {
-        ko: '청담동 프리미엄 피부 클리닉 청담디아. 정밀 피부 진단, 맞춤형 레이저 시술, 필러, 보톡스, 리프팅 전문.',
+        ko: '청담동 프리미엄 피부 클리닉 청담디어. 정밀 피부 진단, 맞춤형 레이저 시술, 필러, 보톡스, 리프팅 전문.',
         en: 'Chungdam DIA Premium Skin Clinic. Specialized in precise skin diagnosis, customized laser treatment, filler, botox, lifting.',
         ja: 'チョンダムディアプレミアムスキンクリニック。精密な肌診断、カスタマイズされたレーザー施術、フィラー、ボトックス、リフティング専門。',
         tw: '清潭DIA頂級皮膚診所。專精於精密皮膚診斷、客製化雷射療程、填充劑、肉毒桿菌、提升。'

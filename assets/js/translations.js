@@ -1,8 +1,8 @@
-// 청담디아 다국어 번역 데이터 (한국어, 영어, 일본어, 대만 번체중국어)
+// 청담디어 다국어 번역 데이터 (한국어, 영어, 일본어, 대만 번체중국어)
 window.translations = {
     ko: {
         // Site
-        'site-name': '청담디아',
+        'site-name': '청담디어',
         
         // Navigation
         'nav-home': '홈',
@@ -16,14 +16,14 @@ window.translations = {
         // Hero
         'hero-subtitle': '당신의 피부가 원하는 방식으로',
         'hero-title': '자연스럽게, 그러나 분명하게',
-        'hero-desc': '청담디아만의 프리미엄 피부 솔루션',
+        'hero-desc': '청담디어만의 프리미엄 피부 솔루션',
         'hero-cta1': '상담 예약',
         'hero-cta2': '프로그램 보기',
         
         // Philosophy
         'philosophy-label': 'DIA PHILOSOPHY',
         'philosophy-title': '디아 디자인 철학',
-        'philosophy-desc': '청담디아는 피부를 단순히 치료하는 것이 아닌,\n개인의 피부 구조와 목적에 맞춘 정밀한 디자인 솔루션을 제공합니다.',
+        'philosophy-desc': '청담디어는 피부를 단순히 치료하는 것이 아닌,\n개인의 피부 구조와 목적에 맞춘 정밀한 디자인 솔루션을 제공합니다.',
         'phil1-title': '정밀 진단',
         'phil1-desc': '최첨단 피부 분석 시스템으로 육안으로 보이지 않는 피부 문제까지 정확하게 진단합니다.',
         'phil2-title': '맞춤 디자인',
@@ -33,7 +33,7 @@ window.translations = {
         
         // Programs
         'programs-label': 'SIGNATURE PROGRAMS',
-        'programs-title': '청담디아 시그니처 프로그램',
+        'programs-title': '청담디어 시그니처 프로그램',
         'badge-signature': 'SIGNATURE',
         'badge-premium': 'PREMIUM',
         'badge-special': 'SPECIAL',
@@ -74,8 +74,8 @@ window.translations = {
         
         // Doctors
         'doctors-label': 'MEDICAL TEAM',
-        'doctors-title': '청담디아 전문 의료진',
-        'doctors-desc': '풍부한 임상 경험과 뛰어난 미적 감각을 갖춘\n청담디아의 전문 의료진을 소개합니다.',
+        'doctors-title': '청담디어 전문 의료진',
+        'doctors-desc': '풍부한 임상 경험과 뛰어난 미적 감각을 갖춘\n청담디어의 전문 의료진을 소개합니다.',
         'doc-position': '대표원장',
         'doc1-name': '이상현 원장',
         'doc1-desc': '한끗 차이로 아름다움을 선사하는 의료진',
@@ -269,7 +269,7 @@ window.translations = {
         // Gallery
         'gallery-label': 'BEFORE & AFTER',
         'gallery-title': '시술 전후',
-        'gallery-desc': '청담디아에서 변화를 경험하신 고객님들의 실제 사례입니다.',
+        'gallery-desc': '청담디어에서 변화를 경험하신 고객님들의 실제 사례입니다.',
         'gal1-title': '풀페이스 필러',
         'gal2-title': '레이저 토닝',
         'gal3-title': '슈링크 리프팅',
@@ -280,7 +280,7 @@ window.translations = {
         // Contact
         'contact-label': 'RESERVATION',
         'contact-title': '상담 예약',
-        'contact-desc': '청담디아에서 당신만의 아름다움을 찾아보세요',
+        'contact-desc': '청담디어에서 당신만의 아름다움을 찾아보세요',
         'info-address-title': '위치',
         'info-address': '서울특별시 강남구 청담동',
         'info-address-detail': '청담역 도보 5분',
@@ -341,7 +341,7 @@ window.translations = {
         'footer-gallery': '갤러리',
         'footer-reservation': '예약',
         'footer-social': '소셜 미디어',
-        'footer-copyright': '© 2024 청담디아 (CHUNGDAM DIA). All Rights Reserved.',
+        'footer-copyright': '© 2024 청담디어 (CHUNGDAM DIA). All Rights Reserved.',
         'footer-business': '서울 강남구 청담동 85-3, 남한강빌딩 5,7층',
         
         // Location
