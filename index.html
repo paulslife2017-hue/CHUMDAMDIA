@@ -1301,7 +1301,34 @@
     </nav>
 
     <!-- Scripts - Deferred for better performance -->
-    <script src="./assets/js/translations.js?v=2024122703" defer></script>
-    <script src="./assets/js/main.js?v=2024122703" defer></script>
+    <script src="./assets/js/translations.js?v=2024122704" defer></script>
+    <script src="./assets/js/main.js?v=2024122704" defer></script>
+    
+    <!-- Inline script for language dropdown - immediate execution -->
+    <script>
+        // 언어 드롭다운 즉시 초기화
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('🌐 Inline script loading...');
+            
+            const langToggle = document.getElementById('langToggle');
+            const langSelector = document.querySelector('.lang-selector');
+            
+            if (langToggle && langSelector) {
+                console.log('✅ Elements found!');
+                
+                langToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('🖱️ Toggle clicked!');
+                    langSelector.classList.toggle('active');
+                    console.log('Active state:', langSelector.classList.contains('active'));
+                });
+                
+                console.log('✅ Click handler attached!');
+            } else {
+                console.error('❌ Elements not found!', {langToggle, langSelector});
+            }
+        });
+    </script>
 </body>
 </html>
