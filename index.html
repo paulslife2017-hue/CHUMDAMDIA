@@ -394,8 +394,10 @@
                 </ul>
             </nav>
             <!-- Language Selector (Dropdown) -->
-            <div class="lang-selector">
-                <button class="lang-toggle" id="langToggle" type="button" aria-label="언어 선택">
+            <div class="lang-selector" id="langSelector" style="position: relative; z-index: 99999;">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="언어 선택" 
+                        style="position: relative; z-index: 100000; pointer-events: auto; cursor: pointer;"
+                        onclick="console.log('BUTTON CLICKED!'); this.parentElement.classList.toggle('active'); return false;">
                     🌐
                 </button>
                 <div class="lang-dropdown" id="langDropdown">
