@@ -79,7 +79,7 @@ button {
 /* ==================== LANGUAGE SELECTOR (DROPDOWN) ==================== */
 .lang-selector {
     position: relative;
-    z-index: 100;
+    z-index: 101;
 }
 
 .lang-toggle {
@@ -97,6 +97,8 @@ button {
     font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 102;
 }
 
 .header.scrolled .lang-toggle {
