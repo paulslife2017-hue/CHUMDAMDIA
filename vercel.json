@@ -42,7 +42,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:jpg|jpeg|png|gif|ico|svg|webp)",
+      "source": "/(.*\\.(jpg|jpeg|png|gif|ico|svg|webp))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:css|js)",
+      "source": "/(.*\\.(css|js))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -66,11 +66,6 @@
       "destination": "/",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
   ]
 }
+
