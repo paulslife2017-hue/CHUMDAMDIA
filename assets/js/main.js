@@ -58,12 +58,32 @@ function initLanguage() {
     // 언어 적용
     setLanguage(currentLang);
     
-    // 언어 버튼 이벤트
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
+    // 언어 드롭다운 토글
+    const langToggle = document.getElementById('langToggle');
+    const langSelector = document.querySelector('.lang-selector');
+    const langDropdown = document.getElementById('langDropdown');
+    
+    if (langToggle) {
+        langToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langSelector.classList.toggle('active');
+        });
+    }
+    
+    // 언어 옵션 클릭 이벤트
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function() {
             const lang = this.getAttribute('data-lang');
             setLanguage(lang);
+            langSelector.classList.remove('active');
         });
+    });
+    
+    // 드롭다운 외부 클릭 시 닫기
+    document.addEventListener('click', function(e) {
+        if (langSelector && !langSelector.contains(e.target)) {
+            langSelector.classList.remove('active');
+        }
     });
     
     // 디버깅: 감지된 언어 로그
@@ -123,14 +143,27 @@ function setLanguage(lang) {
     // 메타 태그 업데이트
     updateMetaTags(lang);
     
-    // 활성 버튼
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (btn.getAttribute('data-lang') === lang) {
-            btn.classList.add('active');
+    // 활성 버튼 업데이트 (드롭다운 옵션)
+    document.querySelectorAll('.lang-option').forEach(option => {
+        if (option.getAttribute('data-lang') === lang) {
+            option.classList.add('active');
         } else {
-            btn.classList.remove('active');
+            option.classList.remove('active');
         }
     });
+    
+    // 현재 언어 텍스트 업데이트
+    const langNames = {
+        'ko': '한국어',
+        'en': 'English',
+        'ja': '日本語',
+        'tw': '繁體中文'
+    };
+    
+    const langCurrentElement = document.querySelector('.lang-current');
+    if (langCurrentElement) {
+        langCurrentElement.textContent = langNames[lang] || '한국어';
+    }
 }
 
 // 번역 가져오기
