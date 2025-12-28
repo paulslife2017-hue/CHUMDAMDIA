@@ -76,7 +76,39 @@ button {
     padding: 0 16px;
 }
 
-/* ==================== LANGUAGE SELECTOR (DROPDOWN) ==================== */
+/* ==================== LANGUAGE SELECTOR (SELECT) ==================== */
+.lang-select {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.lang-select:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.header.scrolled .lang-select {
+    background: rgba(102, 126, 234, 0.08);
+    border-color: rgba(102, 126, 234, 0.2);
+    color: var(--text-dark);
+}
+
+.header.scrolled .lang-select:hover {
+    background: rgba(102, 126, 234, 0.15);
+}
+
+/* 이전 드롭다운 스타일 제거 */
 .lang-selector {
     position: relative;
     z-index: 9999 !important;

@@ -393,32 +393,16 @@
                     <li><a href="#location" data-i18n="nav-location">오시는길</a></li>
                 </ul>
             </nav>
-            <!-- Language Selector (Dropdown) -->
-            <div class="lang-selector" id="langSelector" style="position: relative; z-index: 99999;">
-                <button class="lang-toggle" id="langToggle" type="button" aria-label="언어 선택" 
-                        style="position: relative; z-index: 100000; pointer-events: auto; cursor: pointer;"
-                        onclick="console.log('BUTTON CLICKED!'); this.parentElement.classList.toggle('active'); return false;">
-                    🌐
-                </button>
-                <div class="lang-dropdown" id="langDropdown">
-                    <button class="lang-option active" data-lang="ko" type="button">
-                        <span class="option-flag">🇰🇷</span>
-                        <span class="option-text">한국어</span>
-                    </button>
-                    <button class="lang-option" data-lang="en" type="button">
-                        <span class="option-flag">🇺🇸</span>
-                        <span class="option-text">English</span>
-                    </button>
-                    <button class="lang-option" data-lang="ja" type="button">
-                        <span class="option-flag">🇯🇵</span>
-                        <span class="option-text">日本語</span>
-                    </button>
-                    <button class="lang-option" data-lang="tw" type="button">
-                        <span class="option-flag">🇹🇼</span>
-                        <span class="option-text">繁體中文</span>
-                    </button>
-                </div>
-            </div>
+            <!-- Language Selector (Simple) -->
+            <select id="langSelect" class="lang-select" onchange="if(window.setLanguage) window.setLanguage(this.value);" 
+                    style="padding: 8px 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.3); 
+                           background: rgba(255,255,255,0.15); color: white; font-size: 0.9rem; cursor: pointer;
+                           backdrop-filter: blur(10px); font-weight: 600;">
+                <option value="ko">🇰🇷 한국어</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="tw">🇹🇼 繁中</option>
+            </select>
             <button class="mobile-toggle" aria-label="메뉴">
                 <span></span>
                 <span></span>
@@ -1306,31 +1290,5 @@
     <script src="./assets/js/translations.js?v=2024122704" defer></script>
     <script src="./assets/js/main.js?v=2024122704" defer></script>
     
-    <!-- Inline script for language dropdown - immediate execution -->
-    <script>
-        // 언어 드롭다운 즉시 초기화
-        window.addEventListener('DOMContentLoaded', function() {
-            console.log('🌐 Inline script loading...');
-            
-            const langToggle = document.getElementById('langToggle');
-            const langSelector = document.querySelector('.lang-selector');
-            
-            if (langToggle && langSelector) {
-                console.log('✅ Elements found!');
-                
-                langToggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('🖱️ Toggle clicked!');
-                    langSelector.classList.toggle('active');
-                    console.log('Active state:', langSelector.classList.contains('active'));
-                });
-                
-                console.log('✅ Click handler attached!');
-            } else {
-                console.error('❌ Elements not found!', {langToggle, langSelector});
-            }
-        });
-    </script>
 </body>
 </html>
