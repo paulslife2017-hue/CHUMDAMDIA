@@ -5,19 +5,19 @@
   
   <!-- Main homepage -->
   <url>
-    <loc>https://www.chungdamskinclinic.com/</loc>
+    <loc>https://www.seoulskinclinic.co.kr/</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Alternate language versions -->
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.chungdamskinclinic.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.chungdamskinclinic.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.chungdamskinclinic.com/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.seoulskinclinic.co.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.seoulskinclinic.co.kr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.seoulskinclinic.co.kr/" />
     
     <!-- Main images -->
     <image:image>
-      <image:loc>https://www.chungdamskinclinic.com/assets/images/optimized/hero-beauty.jpg</image:loc>
+      <image:loc>https://www.seoulskinclinic.co.kr/assets/images/optimized/hero-beauty.jpg</image:loc>
       <image:title>Chungdam Skin Clinic - Premium Dermatology</image:title>
       <image:caption>Professional dermatology clinic in Cheongdam, Seoul</image:caption>
     </image:image>
@@ -25,39 +25,39 @@
   
   <!-- English version (if separate URL in future) -->
   <url>
-    <loc>https://www.chungdamskinclinic.com/en</loc>
+    <loc>https://www.seoulskinclinic.co.kr/en</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.chungdamskinclinic.com/en" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://www.chungdamskinclinic.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.seoulskinclinic.co.kr/en" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.seoulskinclinic.co.kr/" />
   </url>
   
   <!-- Future pages (uncomment when created) -->
   <!--
   <url>
-    <loc>https://www.chungdamskinclinic.com/treatments</loc>
+    <loc>https://www.seoulskinclinic.co.kr/treatments</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://www.chungdamskinclinic.com/gallery</loc>
+    <loc>https://www.seoulskinclinic.co.kr/gallery</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.chungdamskinclinic.com/about</loc>
+    <loc>https://www.seoulskinclinic.co.kr/about</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.chungdamskinclinic.com/contact</loc>
+    <loc>https://www.seoulskinclinic.co.kr/contact</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

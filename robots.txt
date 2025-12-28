@@ -11,8 +11,8 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap location
-Sitemap: https://www.chungdamskinclinic.com/sitemap.xml
+Sitemap: https://www.seoulskinclinic.co.kr/sitemap.xml
 
 # Additional sitemaps (for future expansion)
-# Sitemap: https://www.chungdamskinclinic.com/sitemap-blog.xml
-# Sitemap: https://www.chungdamskinclinic.com/sitemap-treatments.xml
+# Sitemap: https://www.seoulskinclinic.co.kr/sitemap-blog.xml
+# Sitemap: https://www.seoulskinclinic.co.kr/sitemap-treatments.xml
